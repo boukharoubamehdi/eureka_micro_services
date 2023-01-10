@@ -66,9 +66,8 @@ The major aim of the Circuit Breaker pattern is to prevent any cascading failure
 Configuration:
 
 Spring cloud servers contains to projects:
-
-	- [currency-conversion-service](https://github.com/boukharoubamehdi/currency-conversion-service)
-	- [spring-cloud-config-files](https://github.com/boukharoubamehdi/spring-cloud-config-files)
+- [currency-conversion-service](https://github.com/boukharoubamehdi/currency-conversion-service)
+- [spring-cloud-config-files](https://github.com/boukharoubamehdi/spring-cloud-config-files)
 
 
 limits-service is a client of spring-cloud server and its configuration are stored as an example  in the project spring-cloud-files 
