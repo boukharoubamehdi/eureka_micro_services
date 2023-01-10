@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "7839be31-5f5d-49d5-9135-9c944c2c6312",
+		"name": "api-gateway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Before redirection (they will not work if the 2 commented out application.properties - discovery.locator.enabled & gateway.discovery.locator.lower-case)",
+			"item": [
+				{
+					"name": "GET currency-exchange",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8765/currency-exchange/currency-exchange/from/EUR/to/CAD",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8765",
+							"path": [
+								"currency-exchange",
+								"currency-exchange",
+								"from",
+								"EUR",
+								"to",
+								"CAD"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET currency-conversion-rest-template",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8765/currency-conversion/currency-conversion/from/USD/to/CAD/quantity/100",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8765",
+							"path": [
+								"currency-conversion",
+								"currency-conversion",
+								"from",
+								"USD",
+								"to",
+								"CAD",
+								"quantity",
+								"100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET currency-conversion-feign",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8765/currency-conversion/currency-conversion-feign/from/USD/to/CAD/quantity/100",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8765",
+							"path": [
+								"currency-conversion",
+								"currency-conversion-feign",
+								"from",
+								"USD",
+								"to",
+								"CAD",
+								"quantity",
+								"100"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "After Redirection",
+			"item": [
+				{
+					"name": "GET currency-exchange",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8765/currency-exchange/from/EUR/to/CAD",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8765",
+							"path": [
+								"currency-exchange",
+								"from",
+								"EUR",
+								"to",
+								"CAD"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET currency-conversion-feign",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8765/currency-conversion-feign/from/USD/to/CAD/quantity/100",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8765",
+							"path": [
+								"currency-conversion-feign",
+								"from",
+								"USD",
+								"to",
+								"CAD",
+								"quantity",
+								"100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET currency-conversion-new",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8765/currency-conversion-new/from/USD/to/CAD/quantity/100",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8765",
+							"path": [
+								"currency-conversion-new",
+								"from",
+								"USD",
+								"to",
+								"CAD",
+								"quantity",
+								"100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET currency-conversion-rest-template",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8765/currency-conversion/from/USD/to/CAD/quantity/100",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8765",
+							"path": [
+								"currency-conversion",
+								"from",
+								"USD",
+								"to",
+								"CAD",
+								"quantity",
+								"100"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GET redirect example",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"get"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

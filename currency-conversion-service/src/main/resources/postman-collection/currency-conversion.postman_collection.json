@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "cdceb41a-6cf9-4562-872a-94f44a99e3b4",
+		"name": "currency-conversion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "currency-conversion-feign",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8100/currency-conversion-feign/from/USD/to/CAD/quantity/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8100",
+					"path": [
+						"currency-conversion-feign",
+						"from",
+						"USD",
+						"to",
+						"CAD",
+						"quantity",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "currency-conversion-rest-template",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8100/currency-conversion/from/USD/to/CAD/quantity/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8100",
+					"path": [
+						"currency-conversion",
+						"from",
+						"USD",
+						"to",
+						"CAD",
+						"quantity",
+						"100"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
