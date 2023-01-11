@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "b74c4157-29d3-436a-9f99-933105ae61b4",
+		"name": "currency-exchange",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "resilience4j",
+			"item": [
+				{
+					"name": "GET sample-api-retry",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/sample-api-retry",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"sample-api-retry"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET sample-api-circuit-breaker",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/sample-api-circuit-breaker",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"sample-api-circuit-breaker"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET sample-api-rate-limiter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/sample-api-rate-limiter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"sample-api-rate-limiter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET sample-api-rate-limiter-bulk-head",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/sample-api-rate-limiter-bulk-head",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"sample-api-rate-limiter-bulk-head"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GET currency-exchange",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/currency-exchange/from/EUR/to/CAD",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"currency-exchange",
+						"from",
+						"EUR",
+						"to",
+						"CAD"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
